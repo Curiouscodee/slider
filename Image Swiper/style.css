@@ -1,0 +1,55 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container: 112rem;
+    --m-auto: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: var(--container);
+    padding: 0 2rem;
+    margin: var(--m-auto);
+}
+
+.swiper {
+    position: relative;
+    width: 240px;
+    height: 380px;
+    flex-direction: column;
+}
+
+.swiper-slide {
+    border-radius: 18px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.heading {
+    padding-top: 10px;
+    color: hsl(0, 0%, 30%);
+}
